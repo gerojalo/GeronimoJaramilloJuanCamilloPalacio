@@ -1,0 +1,29 @@
+#clases{
+	box-shadow: black;
+	border-style: double;
+	margin: 10px;
+	overflow:hidden;
+
+}
+
+
+#imgMusico {
+
+    display: inline-block;
+	border-style: double;
+	width: 200px;
+	height: auto;
+	margin: 20px;
+	float: left;
+
+}
+
+#informacion{
+margin: 40px;
+}
+
+
+body{
+	background: linear-gradient(20deg, #d3f3ff,#ffffff);
+
+}

@@ -1,0 +1,39 @@
+.carousel .item {
+    width: 100%;
+    margin:0;
+    padding: 0; 
+    max-height: 450px;
+    max-width: 700px
+    left:50%
+}
+.carousel .item img {
+	width:100%; 
+	font-size:14px; 
+}
+#oelo{
+	background: linear-gradient( 10deg, #d3f3ff, #ffffff);
+}
+#navegador {
+	background:linear-gradient( 15deg, #d3f3ff, #ffffff);
+}
+.navbar-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+.panel-footer{
+    background:#4E9BFF;
+    border-style:double;
+    border-top: double;
+    color:#d3f3ff;
+}
+.parra{
+    text-align:justify;
+    margin:15px;
+}
+#mapa{
+    vertical-align: text-top;
+    margin:10px;
+}

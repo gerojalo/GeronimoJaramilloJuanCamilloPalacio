@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <!--boostrap-->
+   <link rel="stylesheet" href="css/cssMilo.css">
+   <link rel="stylesheet" href="css/cssGero.css">
+
+   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css">
+   <link rel="stylesheet" href="css/cssMiloRedes.css">
+  <title>Ver clases</title>
+</head>
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top" id="navegador">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Academia las Natys</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#acerca"class="btn btn-prymary btn-md" data-toggle="modal">Quienes somos</a></li>
+            <li><a href="#contactanos" class="btn btn-prymary btn-md" data-toggle="modal">Contactanos</a></li>
+            <li><a href="#Login" class="btn btn-prymary btn-md" data-toggle="modal">Ingresar</a></li>
+            <li class="active"><a href="#">Clases</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+</nav>
+<!--ventana login-->
+<div class="modal fade"id="Login">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button tytle="button"class="close"data-dismiss="modal"aria-hidden="true">&times;</button>
+                      <h3 class="modal-tittle">Ingresar</h3>
+                    </div>
+                    <!--contenido de la ventana-->
+                    <div class="modal-body">
+                      <label>Nombre</label>
+                      <input class="form-control" id="input-sm" type="text"placeholder="Ingrese su nombre">
+                      <br>
+                      <label>Contraseña</label>
+                      <input class="form-control" id="input-sm" type="text"placeholder="Ingrese su contraseña">
+                      <br>
+                      <button type="button" class="btn btn-success">Ingresar</button>
+                    </div>
+                  </div>
+                </div>
+</div>
+<div class="modal fade"id="acerca">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button tytle="button"class="close"data-dismiss="modal"aria-hidden="true">&times;</button>
+                      <h3 class="modal-tittle">Acerca de nosotros</h3>
+                    </div>
+                    <!--contenido de la ventana-->
+                    <div class="modal-body" id="modal">
+                      <div class="container">
+                        <h3>Visión</h3>
+                        <p>"La academia las Natys busca consolidarse como centro de formación,</p>
+                          <p>estudio y difusión musical de excelencia, innovador e internacionalizado;</p>
+                          <p>reconocido por la calidad de sus egresados y como agente activo del desarrollo 
+                            <p>cultural de su comunidad; con una gestión y clima organizacional eficientes;</p> 
+                             <p>social, cultural y ambientalmente comprometida".</p>   
+                        </p>
+                        <br>
+                        <h3>Misión</h3>
+                        <div class="container">
+                        <p>“La entidad academia las Natys es una academia educativa que forma personas</p>
+                        <p>íntegros(as) en el campo de la música, desarrollando en cada uno de ellos todo</p>
+                         su potencial para el logro de competencias cognitivas, procedimentales y 
+                         <p>personales, mediante la aplicación de un modelo educativo innovador y el</p> 
+                          <p>desempeño comprometido de sus funcionarios; en un ambiente que promueve</p>
+                          <p>valores éticos,estéticos,ambientales,sociales y culturales; permitiendo</p>
+                          <p>que sus egresados sean personas reflexivas y autónomas, capaces de emprender</p>
+                          <p>proyectos que beneficien a su comunidad y comprometidas con la construcción de</p>
+                           <p>una sociedad más humana, justa y fraterna”.</p> 
+                        </div>
+                        <br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+</div>
+
+<div class="modal fade"id="contactanos">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button tytle="button"class="close"data-dismiss="modal"aria-hidden="true">&times;</button>
+                      <h3 class="modal-tittle">Contactanos</h3>
+                    </div>
+                    <!--contenido de la ventana-->
+                    <div class="modal-body" id="modal">
+                      <div class="container">
+                        <p><img src="img/tel.png" alt="">   <b>TELEFONO</b>........................<i>263 84 58</i></p>
+                        <br>
+                        <p><img src="img/correo.png" alt="">   <b>CORREO ELECTRONICO</b>........................<i>academiaLasNatys@gmail.com</i></p>
+                        <br>
+                        <p><img src="img/direc.png" alt="">   <b>DIRECCION</b>........................<i>Cra 73 #21-1</i></p>
+                        <br>
+                        <b>Te perdiste...? Toma un mapa!</b>
+                      </div>
+                      <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.297033230529!2d-75.59600879962943!3d6.224510469307576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429c10a76de3b%3A0x12a47c9c506b3437!2sCra.+73+%2321-1%2C+Medell%C3%ADn%2C+Antioquia!5e0!3m2!1ses-419!2sco!4v1473444732476" width="250" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+</div>
+<br><br> <br>
+
+
+<div class="panel panel-default">
+         <div class="container-fluid">
+         <div id="clases" class="panel panel-info">
+             
+             <div class="panel-heading"><h3>Piano </h3></div>    
+               <p>
+             <img src="img/piano.jpg" id="imgMusico"> 
+             <div id="informacion">
+               Este curso de piano online te lleva desde cero a entender las bases que gobiernan este instrumento, de la mano de músicos profesionales. Aprende la técnica correcta para cuidar tu cuerpo y sacar el mejor sonido del instrumento. También entenderás su funcionamiento y desarrollarás tus habilidades y destrezas en el piano mediante divertidos ejercicios. Practica y juega con el teclado musical y piano virtual.
+            </div>
+             </p>
+             
+         </div>
+             
+         </div>
+         
+         <div class="container-fluid">
+         <div id="clases" class="panel panel-info">
+             
+             <div class="panel-heading"><h3>Bajo</h3></div>
+         
+             <p>
+             <img src="img/bajo.jpg" id="imgMusico"> 
+             <div id="informacion">
+               Taller Teórico-Práctico que aborda conceptos de teoría, técnicas, ejecución e interpretación correcta del bajo eléctrico, fomentando el sentido rítmico y valórico, como la sensibilidad musical, además de la coordinación motora.
+               </div>
+             </p>
+         </div>
+         </div>
+         
+         
+         <div class="container-fluid">
+         <div id="clases" class="panel panel-info">
+             
+             <div class="panel-heading"><h3>Percusión </h3></div>
+         
+             <p>
+             <img src="img/bateria.jpg" id="imgMusico"> 
+             <div id="informacion">
+               En el ambiente profesional actual popular el músico percusionista se pueden enfrentar a diferentes situaciones musicales en las que debe ser versátil; el propósito de la cátedra de percusión latina es de brindar mediante un aprendizaje teórico y práctico involucrando los diferentes componentes de esta área.
+               Fin de la conversación
+               </div>
+         
+             </p>
+         </div>
+         </div>
+         
+         
+         <div class="container-fluid">
+         <div id="clases" class="panel panel-info">
+             
+             <div class="panel-heading"><h3>Técnica vocal </h3></div>
+             <p>
+             <img src="img/tVocal.jpg" id="imgMusico"> 
+             <div id="informacion">
+                El programa de Canto está diseñado para formar al estudiante en la interpretación de diversos géneros modernos, incluyendo el pop, rock, blues, jazz, música colombiana y latinoamericana. Estos géneros se cubren a lo largo del Programa en una secuencia progresiva que facilita su asimilación por parte del estudiante.
+             </div>
+             </p>
+         </div>
+         </div>
+         
+         <div class="container-fluid">
+         <div id="clases" class="panel panel-info">
+             
+             <div class="panel-heading"><h3>Guitarra </h3></div>
+             <p>
+             <img src="img/guitarra.jpg" id="imgMusico">
+             <div id="informacion">  
+                El objetivo del taller de guitarra es el de impartir a los interesados, los conocimiento básicos e intermedios, de las estructuras musicales,ritmos y acordes sencillos, para la ejecución y acompañamiento, de temas musicales simples y de mediana dificultad, de interés de los participantes. Se revisarán los principales conceptos acerca de la guitarra, ejercicios y escalas de acoplamiento y coordinación; se estudiarán las características de una pieza musical como son los bajos, los acordes, los arpegios y las formas musicales; se practicarán los principales conceptos de la interpretación.  
+                </div>
+
+             </p>
+         
+         </div>
+         </div>
+
+</div>
+
+<div class="container-fluid" id="redes">
+<div class="caja-redes">
+     <em>Siguenos: </em>
+   <a href="#" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
+   <a href="https://www.facebook.com/academialasnatys/?fref=ts" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
+   <a href="#" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
+</div>
+</div>
+  <!--scripts bootstrap y jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>

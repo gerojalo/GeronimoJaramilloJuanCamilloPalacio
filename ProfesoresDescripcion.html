@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="css/cssMilo.css">
+   <link rel="stylesheet" href="css/cssGero.css">
+   <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css">
+   <link rel="stylesheet" href="css/cssMiloRedes.css">
+   <!--boostrap-->
+  <title>Ver profesores</title>
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" id="navegador">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Academia las Natys</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#acerca"class="btn btn-prymary btn-md" data-toggle="modal">Quienes somos</a></li>
+            <li><a href="#contactanos" class="btn btn-prymary btn-md" data-toggle="modal">Contactanos</a></li>
+            <li><a href="#Login" class="btn btn-prymary btn-md" data-toggle="modal">Ingresar</a></li>
+            <li class="active"><a href="#">Profesores</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+</nav>
+<!--ventana login-->
+<div class="modal fade"id="Login">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button tytle="button"class="close"data-dismiss="modal"aria-hidden="true">&times;</button>
+                      <h3 class="modal-tittle">Ingresar</h3>
+                    </div>
+                    <!--contenido de la ventana-->
+                    <div class="modal-body">
+                      <label>Nombre</label>
+                      <input class="form-control" id="input-sm" type="text"placeholder="Ingrese su nombre">
+                      <br>
+                      <label>Contraseña</label>
+                      <input class="form-control" id="input-sm" type="text"placeholder="Ingrese su contraseña">
+                      <br>
+                      <button type="button" class="btn btn-success">Ingresar</button>
+                    </div>
+                  </div>
+                </div>
+</div>
+<div class="modal fade"id="acerca">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button tytle="button"class="close"data-dismiss="modal"aria-hidden="true">&times;</button>
+                      <h3 class="modal-tittle">Acerca de nosotros</h3>
+                    </div>
+                    <!--contenido de la ventana-->
+                    <div class="modal-body" id="modal">
+                      <div class="container">
+                        <h3>Visión</h3>
+                        <p>"La academia las Natys busca consolidarse como centro de formación,</p>
+                          <p>estudio y difusión musical de excelencia, innovador e internacionalizado;</p>
+                          <p>reconocido por la calidad de sus egresados y como agente activo del desarrollo 
+                            <p>cultural de su comunidad; con una gestión y clima organizacional eficientes;</p> 
+                             <p>social, cultural y ambientalmente comprometida".</p>   
+                        </p>
+                        <br>
+                        <h3>Misión</h3>
+                        <div class="container">
+                        <p>“La entidad academia las Natys es una academia educativa que forma personas</p>
+                        <p>íntegros(as) en el campo de la música, desarrollando en cada uno de ellos todo</p>
+                         su potencial para el logro de competencias cognitivas, procedimentales y 
+                         <p>personales, mediante la aplicación de un modelo educativo innovador y el</p> 
+                          <p>desempeño comprometido de sus funcionarios; en un ambiente que promueve</p>
+                          <p>valores éticos,estéticos,ambientales,sociales y culturales; permitiendo</p>
+                          <p>que sus egresados sean personas reflexivas y autónomas, capaces de emprender</p>
+                          <p>proyectos que beneficien a su comunidad y comprometidas con la construcción de</p>
+                           <p>una sociedad más humana, justa y fraterna”.</p> 
+                        </div>
+                        <br>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+</div>
+
+<div class="modal fade"id="contactanos">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button tytle="button"class="close"data-dismiss="modal"aria-hidden="true">&times;</button>
+                      <h3 class="modal-tittle">Contactanos</h3>
+                    </div>
+                    <!--contenido de la ventana-->
+                    <div class="modal-body" id="modal">
+                      <div class="container">
+                        <p><img src="img/tel.png" alt="">   <b>TELEFONO</b>........................<i>263 84 58</i></p>
+                        <br>
+                        <p><img src="img/correo.png" alt="">   <b>CORREO ELECTRONICO</b>........................<i>academiaLasNatys@gmail.com</i></p>
+                        <br>
+                        <p><img src="img/direc.png" alt="">   <b>DIRECCION</b>........................<i>Cra 73 #21-1</i></p>
+                        <br>
+                        <b>Te perdiste...? Toma un mapa!</b>
+                      </div>
+                      <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.297033230529!2d-75.59600879962943!3d6.224510469307576!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429c10a76de3b%3A0x12a47c9c506b3437!2sCra.+73+%2321-1%2C+Medell%C3%ADn%2C+Antioquia!5e0!3m2!1ses-419!2sco!4v1473444732476" width="250" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                  </div>
+                </div>
+</div><br><br><br> <br>
+
+<div class="panel panel-default">
+         <div class="container-fluid">
+         <div id="clases" class="panel panel-info">
+             
+             <div class="panel-heading"><h3>Jose Rueda Londoño </h3></div>    
+               <p>
+             <img src="img/el1.jpg" id="imgMusico"> 
+             <div id="informacion">
+               <h3>Descripcion</h3>
+               <p>
+                 creativo, dinámico y de fácil desenvolvimiento frente al público; con aptitudes musicales y con disciplina, constancia y tenacidad para el estudio. 
+                 Los aspirantes al programa de Música deben presentar una prueba donde se evaluarán aspectos como afinación, ritmo, destrezas auditivas y conocimientos de teoría musical.
+               </p>
+               <h3>Edad : 25</h3>
+
+            </div>
+            </p>
+             
+         </div>
+             
+         </div>
+         
+         <div class="container-fluid">
+         <div id="clases" class="panel panel-info">
+             
+             <div class="panel-heading"><h3>Rosa Naoria Florez </h3></div>
+         
+             <p>
+             <img src="img/ella1.jpg" id="imgMusico"> 
+             <div id="informacion">
+               <h3>Descripcion</h3>
+               <p>
+                 creativo, dinámico y de fácil desenvolvimiento frente al público; con aptitudes musicales y con disciplina, constancia y tenacidad para el estudio. 
+                 Los aspirantes al programa de Música deben presentar una prueba donde se evaluarán aspectos como afinación, ritmo, destrezas auditivas y conocimientos de teoría musical.
+               </p>
+               <h3>Edad : 25</h3>
+               </div>
+             </p>
+         </div>
+         </div>
+         
+         
+         <div class="container-fluid">
+         <div id="clases" class="panel panel-info">
+             
+             <div class="panel-heading"><h3>John Jairo Nuñez </h3></div>
+         
+             <p>
+             <img src="img/el2.jpg" id="imgMusico"> 
+             <div id="informacion">
+               <h3>Descripcion</h3>
+               <p>
+                 creativo, dinámico y de fácil desenvolvimiento frente al público; con aptitudes musicales y con disciplina, constancia y tenacidad para el estudio. 
+                 Los aspirantes al programa de Música deben presentar una prueba donde se evaluarán aspectos como afinación, ritmo, destrezas auditivas y conocimientos de teoría musical.
+               </p>
+               <h3>Edad : 25</h3>
+               </div>
+         
+             </p>
+         </div>
+         </div>
+</div>
+
+<div class="container-fluid" id="redes">
+<div class="caja-redes">
+     <em>Siguenos: </em>
+   <a href="#" class="icon-button twitter"><i class="icon-twitter"></i><span></span></a>
+   <a href="https://www.facebook.com/academialasnatys/?fref=ts" class="icon-button facebook"><i class="icon-facebook"></i><span></span></a>
+   <a href="#" class="icon-button google-plus"><i class="icon-google-plus"></i><span></span></a>
+</div>
+</div>
+
+
+ 
+
+
+  <!--scripts bootstrap y jquery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
